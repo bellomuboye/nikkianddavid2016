@@ -1,0 +1,7 @@
+nav.navbar {
+    text-transform: uppercase;
+}
+
+.navbar-brand img{
+    max-width: 238px;
+}
