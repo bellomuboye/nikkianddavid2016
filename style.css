@@ -1,7 +1,62 @@
-nav.navbar {
-    text-transform: uppercase;
+
+
+button.d-link {
+    background: none;
+    border: none;
+    text-decoration: underline;
 }
 
-.navbar-brand img{
-    max-width: 238px;
+section.event-details {
+    font-size: 17px;
+}
+
+
+
+.proposed-modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.proposed-modal-close {
+    color: white;
+    font-size: 45px;
+    background: none;
+    border: none;
+}
+
+.proposed-modal-content {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 400px;
+    border: white 1px solid;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal-close {
+    display: none;
+}
+
+.modal-open {
+    display: block;
+}
+
+.one{
+    background: url('images/index/first-bg.jpg');
+}
+
+.two{
+    background: white;
+}
+
+.three{
+    background: url('images/index/empty-space.jpg');
 }

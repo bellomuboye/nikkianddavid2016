@@ -1,0 +1,93 @@
+
+
+button.d-link {
+    background: none;
+    border: none;
+    text-decoration: underline;
+}
+
+section.event-details {
+    font-size: 17px;
+}
+
+
+
+.proposed-modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.proposed-modal-close {
+    color: white;
+    font-size: 45px;
+    background: none;
+    border: none;
+}
+
+.proposed-modal-content {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 400px;
+    border: white 1px solid;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal-close {
+    display: none;
+}
+
+.modal-open {
+    display: block;
+}
+
+.one{
+    background: url('images/index/first-bg.jpg');
+}
+
+.two{
+    background: white;
+}
+
+.three{
+    background: url('images/wedding-party/empty-space.png');
+}
+
+a.d-button {
+    background: white;
+padding: 0.5em;
+margin: 0.25em;
+text-decoration: none;
+color: inherit;
+}
+
+.img-card {
+    background: white;
+    max-width: 400px;
+    margin: 3em auto;
+}
+
+.img-card-content {
+    padding: 0.5em 3em;
+}
+
+.img-card .section-title {
+    font-size: 32px;
+}
+
+.img-card .img-card-text {
+    font-size: 14px;
+    color: #803258;
+}
+
+.two {
+    background: url(images/wedding-party/first-bg.png);
+}

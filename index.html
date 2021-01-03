@@ -15,83 +15,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="bootstrap.min.css" />
-    <link rel="stylesheet" href="parallax.css" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="general.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Clock</title>
   </head>
 
   <body data-new-gr-c-s-loaded="9.22.0">
     <div class="wrapper">
-      <section class="one">
-        <nav class="navbar navbar-expand-lg">
-          <!--  Show this only on mobile to medium screens  -->
-          <a class="navbar-brand d-lg-none" href="#">Navbar</a>
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarToggle"
-            aria-controls="navbarToggle"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <!--  Use flexbox utility classes to change how the child elements are justified  -->
-          <div
-            class="collapse navbar-collapse justify-content-between"
-            id="navbarToggle"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="#"
-                  >Home <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Our Story</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Event Details</a>
-              </li>
-            </ul>
-
-            <!--   Show this only lg screens and up   -->
-            <a class="navbar-brand d-none d-lg-block" href="#"
-              ><img src="nav-brand.png" alt="" class="img-fluid"
+      <section class="one min-vh-100">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg">
+            <!--  Show this only on mobile to medium screens  -->
+            <a class="navbar-brand d-lg-none" href="#"
+              ><img src="images/nav-brand.png" alt="" class="img-fluid"
             /></a>
 
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Wedding Party</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Registry</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <h2>Section 1</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit saepe
-          aspernatur, recusandae quidem veritatis totam eveniet assumenda
-          temporibus dolore iure reprehender t molestiae dolorem, et voluptatum
-          labore deleniti dolor adipisci nam?
-        </p>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarToggle"
+              aria-controls="navbarToggle"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--  Use flexbox utility classes to change how the child elements are justified  -->
+            <div
+              class="collapse navbar-collapse justify-content-between"
+              id="navbarToggle"
+            >
+              <ul class="navbar-nav flex-grow-1 justify-content-between">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Our Story</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Event Details</a>
+                </li>
+              </ul>
+
+              <!--   Show this only lg screens and up   -->
+              <a class="navbar-brand d-none d-lg-block flex-grow-1 text-center" href="#">
+                <img src="images/nav-brand.png" alt="" class="img-fluid" />
+              </a>
+
+              <ul class="navbar-nav flex-grow-1 justify-content-between">
+                <li class="nav-item">
+                  <a class="nav-link" href="wedding-party.html">Wedding Party</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Registry</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </section>
 
       <section class="two our-story">
         <div class="row">
           <div class="col-lg-6">
-            <img src="our-story.jpg" class="img-fluid" alt="" />
+            <img src="images/index/our-story.jpg" class="img-fluid" alt="" />
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 align-self-center">
             <h2 class="section-title text-uppercase">Our Story</h2>
             <p>
               On a rainy autumn day in 2008 at Cornell University, Nikki
@@ -129,7 +131,7 @@
             <p>
               They now live next to Gramercy Park, which cannot be entered
               without a key. Not to be deterred, David secretly procured one and
-              <button class="d-link proposed-modal">proposed to Nikki</button>
+              <button class="d-link proposed-modal-trigger">proposed to Nikki</button>
               as it began to drizzle in the park on March 14, 2015. She was
               never so happy to have been caught in the rain.
             </p>
@@ -137,15 +139,13 @@
         </div>
       </section>
 
-      <section class="three">
-
-      </section>
-      <section class="two" style="background-color: red">
+      <section class="three min-vh-100"></section>
+      <section class="two event-details min-vh-100">
         <h2 class="section-title text-uppercase text-center">Event Details</h2>
         <div class="row">
           <div class="col-lg-6 text-right">
-            <h3 class="section-subtitle text-uppercase">Accommodations</h3>
-            <p class="section-subtitle-description">Request Our Room Block</p>
+            <h3 class="section-subtitle text-uppercase mb-0">Accommodations</h3>
+            <p class="section-subtitle-description mt-0">Request Our Room Block</p>
 
             <div class="text-block">
               <p>The Garden City Hotel</p>
@@ -153,15 +153,15 @@
               <p>Garden City, NY 11530</p>
               <a href="" class="body-link">Make Reservations >></a>
             </div>
-            <a href="" class="body-link">The Courtyard Marriott Wesbury >></a>
-            <a href="" class="body-link">The Hilton Garden Inn Westbury >></a>
+            <p><a href="" class="body-link">The Courtyard Marriott Wesbury >></a></p>
+            <p><a href="" class="body-link">The Hilton Garden Inn Westbury >></a></p>
           </div>
 
           <div class="col-lg-6 text-left">
-            <h3 class="section-subtitle text-uppercase">
+            <h3 class="section-subtitle text-uppercase mb-0">
               Ceremony & Reception
             </h3>
-            <p class="section-subtitle-description">October 15, 2016, 7:30pm</p>
+            <p class="section-subtitle-description mt-0">October 15, 2016, 7:30pm</p>
 
             <div class="text-block">
               <p>Old Westbury Hebrew Congregation</p>
@@ -172,16 +172,26 @@
           </div>
         </div>
         <div class="row">
-          <img src="accommodations.png" alt="" class="img-fluid">
+          <img src="images/index/accommodations.png" alt="" class="img-fluid" />
         </div>
 
-        <footer>
-          
+        <footer class="text-center p-5">
+          <a href="" class="huge-caret">^</a>
+          <a href="" class="text-uppercase">Back to Top</a>
+          <p class="copyright mt-5">©2016 by Trisha Nussbaum</p>
+
         </footer>
       </section>
     </div>
-
+    <div class="proposed-modal p-5 modal-close text-right">
+      <button class="proposed-modal-close">X</button>
+      <div class="proposed-modal-content text-center">
+        <img src="images/index/proposal-pic.jpg" alt="">
+      </div>
+    </div>
+    <script src="script.js"></script>
     <script src="parallax.js"></script>
-    <script src="bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/jquery-3.5.1.slim.min.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
   </body>
 </html>
