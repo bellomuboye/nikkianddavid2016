@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    box-sizing: border-box;
+    padding: 0;
+    overflow: hidden;
+    margin: 0;  
+}
+
+
+.wrapper{
+   perspective: 1px;
+    height: 100vh;
+    overflow-y: auto; 
+    overflow-x: hidden;
+    transform-style: preserve-3d;
+}
+
+/* section{
+  min-height: 100vh;
+} */
+
+.one{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center; */
+  position: relative;
+  transform: translateZ(-1px) scale(2);
+}
+
+.two{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; */
+    transform: translateZ(0);
+}
+
+
+.three{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    z-index: -11111;
+    transform: translateZ(-1px) scale(2);
+}
+
+
+body {
+    font-family: 'Raleway'; 
+    font-size: 14px; 
+  }
+  
+  nav.navbar {
+      text-transform: uppercase;
+  }
+  
+  .navbar-brand img{
+      max-width: 238px;
+  }
+  
+  .nav-link {
+      font-size: 13px;
+      color: black;
+  }
+  
+  .section-title {
+      font-family: 'Caudex';
+      font-size: 40px;
+  }
+
+  .section-subtitle {
+    font-size: 19px;
+}
+
+.text-block {
+    margin-bottom: 1em;
+}
+
+.text-block * {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.body-link {
+    text-decoration: underline;
+    color: inherit;
+}
+
+footer {
+    color: white;
+    background-color: #2f2e2e;
+}
+
+footer.copyright {
+    color: #A0A09F;
+}
+
+footer a {
+    display: block;
+    color: inherit;
+}
+
+.huge-caret {
+    font-size: 45px;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly !important;
+}
+
+.colour-pink {
+    color: #803258 !important;
+}
