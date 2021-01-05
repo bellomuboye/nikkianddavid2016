@@ -90,4 +90,5 @@ color: inherit;
 
 .two {
     background: url(images/wedding-party/first-bg.png);
+    background-size: 100%;
 }
