@@ -127,3 +127,7 @@ footer a {
 .colour-pink {
     color: #803258 !important;
 }
+
+.navbar-toggler {
+    width: 50px;
+}
